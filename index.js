@@ -5,10 +5,6 @@ const middleware = jsonServer.defaults();
 
 server.use(middleware);
 
-server.use(jsonServer.rewriter({
-    '/*': '/$1',
-}))
-
 server.use(router);
 
 server.listen(3000, () => {});
