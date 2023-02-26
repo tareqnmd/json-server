@@ -5,16 +5,9 @@ const middleware = jsonServer.defaults();
 
 server.use(middleware);
 
-// server.use(jsonServer.rewriter({
-//     '/api/*': '/$1',
-//     '/blog/:resource/:id/show': '/:resource/:id'
-// }))
-
 server.use(router);
 
-server.listen(3000, () => {
-	console.log('JSON Server is running');
-});
+server.listen(3000, () => {});
 
 // Export the Server API
 module.exports = server;
