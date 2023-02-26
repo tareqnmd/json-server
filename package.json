@@ -4,7 +4,7 @@
 	"description": "Fake data server",
 	"main": "index.js",
 	"scripts": {
-		"start": "json-server --watch db.json --no-cors true --port 3200"
+		"start": "json-server --watch db.json --no-cors true"
 	},
 	"author": "tareqnmd",
 	"license": "ISC",
